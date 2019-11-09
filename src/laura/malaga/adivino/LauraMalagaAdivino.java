@@ -18,7 +18,8 @@ public class LauraMalagaAdivino {
      */
     public static void main(String[] args) {
         int n = 0,cont = 0;
-        int x = (int) (500 *Math.random());
+        int x = (int) (Math.random()*41+10);
+        
         //System.out.print(x);
         Scanner sc = new Scanner(System.in);
         do {
@@ -31,7 +32,7 @@ public class LauraMalagaAdivino {
             }
             cont++;
         } while (n != x);
-        System.out.print("Exelente!!! Haz acertado , No. de intentos: "+cont );
+        System.out.print("Exelente!!! Has acertado , No. de intentos: "+cont );
         sc.close();
     }
     
